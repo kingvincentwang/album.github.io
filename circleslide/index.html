@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Tiny Circleslider: A lightweight cross browser circular carousel.</title>
+	<style>
+	img { border: 0; }
+/* Tiny Circleslider */
+#rotatescroll { height:300px; position:relative; width:300px; }
+#rotatescroll .viewport{ height:300px; position: relative; margin:0 auto; overflow:hidden; width:300px; pointer-events: none }
+#rotatescroll .overview { position: absolute; width: 798px; list-style: none; margin: 0; padding: 0;  left: 0; top: 0; }
+#rotatescroll .overview li { height:300px; width:300px; float: left; position: relative; }
+#rotatescroll .overlay {background:url(images/bg-rotatescroll.png) no-repeat 0 0; pointer-events: none; position: absolute; left: 0; top: 0; height:300px; width:300px; }
+#rotatescroll .thumb { background:url(images/bg-thumb.png) no-repeat 50% 50%; touch-action: none; -ms-touch-action: none; position: absolute; top: -3px; cursor: pointer; left: 137px; width: 100px; z-index: 200;  height: 100px; }
+#rotatescroll .dot { background:url(images/bg-dot.png) no-repeat 0 0; display: none; height: 12px; width: 12px; position: absolute; left: 155px; top: 3px; z-index: 100; }
+#rotatescroll .dot span { display: none; }
+	</style>
+
+	
+</head>
+<body>
+<h1>相簿展示</h1>
+<hr>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- build:js jquery.tinycircleslider.js -->
+	
+   <script src="https://wwwgseshccedutw1681688.on.drv.tw/web/lib/jquery.tinycircleslider.js"></script> 
+	<!-- /build -->
+	<script src="https://wwwgseshccedutw1681688.on.drv.tw/web/lib/round.js"></script>
+	<div id="rotatescroll">
+		<div class="viewport">
+			<ul class="overview">
+				<li><img src="https://drive.google.com/thumbnail?id=10or5FvxTwb36xe-DuNKXLxxRA4qoorpp&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=1A7I_3qVq_ihug2XqOsRDcEHrOtHndblJ&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=1SjIVDZb7E0UWt9z4qeNn32nppY2s1m4J&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=18PjytrdjBrdyFapkzNLkdTwVrcNf8a3u&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=1kEF73w6QgWHQGmEl0OK1AwuRQDFEhNnD&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=1SplfawBv2NOmDKhpiMKRET_KBSawvVef&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=1kP_7vxkYTyZKlL6QRWk1fOFpO48ARFXg&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=1kbc6MlPhyuZ4biU6SrJHY162bg6KKUZx&sz=w380" /></li>
+				<li><img src="https://drive.google.com/thumbnail?id=1x25uw0w0UTaKrHdStLFbA03v7l11gcx_&sz=w380" /></li>
+			</ul>
+		</div>
+
+		<div class="dot"></div>
+		<div class="overlay"></div>
+		<div class="thumb"></div>
+	</div>
+</body>
+</html>
